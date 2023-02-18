@@ -88,9 +88,35 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </style>
 
 <body>
+	<body>
+<div id="header" class="w3-container w3-flat-carrot">
+	<h1>Scabies or Contact Dermatitis? </h1>  <! header on first page when visiting site >
+</div>
 	
-	<!-- HERE IS WHERE ALL OF YOUR HTML PAGES GO -->
-	REPLACE THIS TEXT
+<div id="content" class="w3-container">
+	<p>Are you wondering if your rash is scabies or contact dermatitis. Answer a few short questions to find out!</p>  <! introduction paragraph >
 	
+	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>  <! code for button on first page, this brings you to series of questions >
+	
+	
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>  <! Disclaimer that is displayed on first page >
+ 	
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>  <! disclaimer displayed on first page >
+
+<div class="page" id="one">  <! this page includes code that asks the user the first question. Once user presses the "Yes" or "No" button, the user will be directed to page 2 >
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 1</h1>
+	<!-- added code to make yes or no buttons for question 1, response goes into function for allergy and cold --> 
+	</div>
+	
+    	<div id="content" class="w3-container">
+	<p>Does your rash mainly itch at night?</p>   <! question 1 that is asked to user >
+	</div>
+	<a href="#two" onclick="scabiesAdd();"class="w3-btn w3-grey w3-round"> Yes </a>  <! if user responds yes, one will be added to allergy >
+	<a href="#two" onclick="contactdermatitisAdd();"class="w3-btn w3-grey w3-round"> No </a>  <! if user responds no, one will be added to code >
+     
+		 <!-- added question into content section --> 
+    	</div>
+
 </body>
 </html>
