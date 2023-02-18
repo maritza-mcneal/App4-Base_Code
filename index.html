@@ -38,7 +38,28 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 
-	//YOUR JAVASCRIPT GOES HERE
+<script>
+        var contactdermatitis_count = 0; //contactdermatitis count to begin at 0
+        var scabies_count = 0; //scabies count to begin at 0
+
+        function contactdermatitisAdd(){
+            contactdermatitis_count = contactdermatitis_count + 1; //if question relates to contactdermatitis, add 1
+		alert(contactdermatitis_count); //alerts that question relates to contactdermatitis 
+
+        }
+
+        function coldAdd(){
+            scabies_count = scabies_count + 1; //if question relates to scabies, add 1
+        }
+	
+	function getResults(){
+		var contactdermatitisPercent = (contactdermatitis_count / 4) * 100; //equation to calculate the contactdermatitis percent by questions that answered "Yes" to contactdermatitis
+		var scabiesPercent = (scabies_count / 4) * 100; //equation to calculate the scabies percent by questions that answered "Yes" to scabies
+		document.getElementById("results").innerHTML = "Probability it is contactdermatitis =" + contactdermatitisPercent + "<br> Probability it is a scabies = " + scabiesPercent; 	//function to calculate the percent possibility that it is either contactdermatitis or scabies
+	}
+
+  </script>
+
 
 </script>	
 
